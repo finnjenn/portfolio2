@@ -1,0 +1,47 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+---
+
+<section id="projects">
+    <h1>Check us out!</h1>
+    <h2>Here's some of our happy clients and other projects</h2>
+    <div id="clients">
+        <ProjectItem deskURL="/desktop-morgan.png" phoneURL="/iphone-morgan.png" project="Morgan Paints Inc." location="Christiansburg, VA" webURL="https://morganpaints.com/" />
+        <ProjectItem deskURL="/desktop-sterling.png" phoneURL="/iphone-sterling.png" project="Sterling Painting" location="Christiansburg, VA" webURL="https://sterlingpaintingnrv.com/" />
+        <ProjectItem deskURL="/desktop-threedles.png" phoneURL="/iphone-threedles.png" project="Threedles Needleart Design" location="Riner, VA" webURL="https://threedles.netlify.app/"/>
+    </div>
+    <div id="templates">
+        <ProjectItem deskURL="/desktop-landscape.png" phoneURL="/iphone-landscape.png" project="Landscape - Minimalist" location="Created by Finn" webURL="https://landscapingminimal.netlify.app/" />
+        <ProjectItem deskURL="/desktop-dog.png" phoneURL="/iphone-dog.png" project="Dog Breeder" location="Created by Finn" webURL="https://dogbreeder.netlify.app/" />
+    </div>
+</section>
+
+<style>
+    #projects {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-left: 1.5rem;
+        /* margin-bottom: 1rem; */
+        font-family: Heyam;
+        letter-spacing: 2px;
+    }
+    h2 {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 0 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid black;
+        line-height: 2rem;
+        text-wrap: balance;
+    }
+    #clients,
+    #templates {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: rem;
+    }
+</style>

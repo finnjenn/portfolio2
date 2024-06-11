@@ -2,27 +2,23 @@
     <div id="content">
         <h1>
             From idea
-            <img src="/bulb.svg" alt="" id="bulb">
+            <img src="/bulb.svg" alt="bulb icon" id="bulb">
         </h1>
         <h2>to the</h2>
         <h3>
             web
-            <img src="/pointer.svg" alt="" id="pointer">
+            <img src="/pointer.svg" alt="pointer icon" id="pointer">
         </h3>
         <h4>We're here every step of the way</h4>
     </div>
-    <a href="">Get in touch!</a>
-    <img src="/desktop-morgan.png" alt="">
-    <img src="/desktop-sterling.png" alt="">
-    <img src="/desktop-threedles.png" alt="">
-    <img src="/desktop-landscape.png" alt="">
-    <img src="/desktop-dog.png" alt="">
+    <a href="#contact">Get in touch!</a>
 </main>
 
 <style>
     #home {
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         margin-top: 5rem;
+        margin-bottom: 4rem;
     }
     #content {
         position: relative;
@@ -50,12 +46,12 @@
     h2 {
         border: 2px solid black;
         margin-left: 40%;
-        margin-right: 2rem;
+        margin-right: 4rem;
         margin-top: -1.5rem;
         padding-left: 1rem;
         padding-top: 1rem;
-        padding-bottom: 2rem;
-        font-size: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
         font-weight: 300;
         text-transform: uppercase;
         position: relative;
@@ -96,6 +92,7 @@
     a {
         display: block;
         text-align: center;
+        font-size: 1.1rem;
         width: 10rem;
         margin: 2rem auto;
         padding: 0.75rem 0;
@@ -115,9 +112,7 @@
         bottom: 1.5rem;
         width: 2rem;
         transition: 500ms;
-    }
-    h1:hover #bulb {
-        transform: translateX(1.5rem) rotate(55deg) scale(2.25);
+        transform: translateX(1.5rem) rotate(55deg) scale(2.5);
         transform-origin: 100% 100%;
     }
     #pointer {
@@ -125,8 +120,6 @@
         right: 0;
         bottom: 0.25rem;
         transition: 500ms;
-    }
-    h3:hover #pointer {
         transform: translateX(3rem) translateY(-1rem) scale(2.5);
     }
     @media (min-width: 35rem) {
@@ -135,19 +128,20 @@
             margin: 0 auto;
         }
     }
-    @media (max-width: 30rem) {
+    @media (max-width: 32rem) {
         h1 {
-            font-size: 3rem;
-            margin-left: 0;
+            font-size: 2.75rem;
+            margin-left: 2%;
         }
-        h1:hover #bulb {
+        #bulb {
             transform: translateX(1.25rem) rotate(55deg) scale(2);
         }
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
+            margin-right: 5%;
         }
         h3 {
-            font-size: 2.75rem;
+            font-size: 2.5rem;
         }
         h4 {
             font-size: 1.75rem;
