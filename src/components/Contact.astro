@@ -1,14 +1,14 @@
 <section id="contact">
     <h1>Contact us!</h1>
     <h2>A beautiful, custom website is just a click away</h2>
-    <form action="">
+    <form action="https://formspree.io/f/xyyrrvbr" method="POST">
         <input id="one" type="text" name="Fullname" placeholder="Fullname" required>
         <input id="two" type="email" name="Email" placeholder="Email" required>
         <input id="three" type="tel" name="Phone" placeholder="Phone" required>
         <textarea id="four" name="Message" placeholder="Message" required></textarea>
         <button>Get in touch!</button>
-        <a href="">
-            <img src="/facebook.svg" alt="">
+        <a href="https://www.facebook.com/profile.php?id=61557349554722">
+            <img src="/facebook.svg" alt="Facebook Icon">
         </a>
     </form>
 </section>
@@ -78,6 +78,10 @@
         font-size: 1.1rem;
         cursor: pointer;
         transform: translateX(-2rem);
+        transition: 200ms;
+    }
+    button:hover {
+        transform: translateY(-3px) translateX(-2rem);
     }
     a {
         display: inline-block;
