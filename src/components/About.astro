@@ -1,0 +1,85 @@
+<section id="about">
+    <h1>Get to know us!</h1>
+    <div id="content">
+        <img src="/about.svg" alt="person standing in front of a computer">
+        <div id="text">
+            <p>Specializing in custom web design and development, our mission is to help <span>small</span> businesses in Virginia bring their <span>big</span> ideas to life!
+                <br>
+                <br>
+                With every line typed by hand and every design custom-made to fit your needs, we provide solutions that fit your business best.
+            </p>
+            <a href="#services">Learn More!</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    #about {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        margin-bottom: 5rem;
+    }
+    h1 {
+        font-family: Heyam;
+        font-size: 3rem;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+    }
+    #content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    img {
+        margin: 1rem;
+        width: 30rem;
+    }
+    #text {
+        width: 30rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem 0.25rem;
+        line-height: 2rem;
+        font-weight: 300;
+    }
+    span {
+        color: #7b1ed2;
+        font-weight: 400;
+    }
+    a {
+        color: #7b1ed2;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 1px solid #7b1ed2;
+        border-radius: 0.25rem;
+        padding: 1rem 2rem;
+        transition: 250ms;
+    }
+    a:hover {
+        background-color: #7b1ed2;
+        color: white;
+    }
+    @media (max-width: 40rem) {
+        h1 {
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            /* font-size: 10vw; */
+            /* width: 90%; */
+        }
+        img,
+        #text {
+            width: 80%;
+        }
+        #text {
+            padding: 1rem 0;
+        }
+    }
+</style>
