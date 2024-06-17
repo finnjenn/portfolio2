@@ -1,0 +1,102 @@
+<section id="contact">
+    <h1>Contact us!</h1>
+    <h2>A beautiful, custom website is just a click away</h2>
+    <form action="">
+        <input id="one" type="text" name="Fullname" placeholder="Fullname" required>
+        <input id="two" type="email" name="Email" placeholder="Email" required>
+        <input id="three" type="tel" name="Phone" placeholder="Phone" required>
+        <textarea id="four" name="Message" placeholder="Message" required></textarea>
+        <button>Get in touch!</button>
+        <a href="">
+            <img src="/facebook.svg" alt="">
+        </a>
+    </form>
+</section>
+
+<style>
+    #contact {
+        margin-bottom: 3rem;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+    h1 {
+        font-family: Heyam;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-left: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    h2 {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+        margin-bottom: 2rem;
+        line-height: 2rem;
+    }
+    form {
+        width: 30rem;
+        margin: 0 auto;
+        text-align: center;
+        }
+    input,
+    textarea {
+        border: none;
+        border: 1px solid #7b1ed2;
+        color: #7b1ed2;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        display: block;
+        width: 70%;
+        resize: none;
+        padding: 1.5rem;
+        margin: 1.25rem 0;
+        box-shadow: 7px 7px 20px #a276c9;
+        transition: 200ms;
+    }
+    input::placeholder,
+    textarea::placeholder {
+        color: #7b1ed2;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    input:focus,
+    textarea:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    #two,
+    #four {
+        margin-left: auto;
+        text-align: right;
+    }
+    button {
+        background-color: #7b1ed2;
+        color: white;
+        border: 1px solid #7b1ed2;
+        border-radius: 0.25rem;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transform: translateX(-2rem);
+    }
+    a {
+        display: inline-block;
+        border: 1px solid #7b1ed2;
+        border-radius: 2rem;
+        padding: 0.5rem;
+        transform: translateY(1.25rem);
+        transition: 200ms;
+        box-shadow: 7px 7px 20px #a276c9;
+    }
+    a:hover {
+        box-shadow: none;
+    }
+    img {
+        width: 2rem;
+    }
+    @media (max-width: 34rem) {
+        form {
+            width: 90%;
+        }
+    }
+</style>
