@@ -8,7 +8,7 @@ const {deskURL, phoneURL, project, location, webURL} = Astro.props;
     <h1>{project}</h1>
     <h2>{location}</h2>
     <a class="btn" href={webURL}>Visit site</a>
-    <a class="link" href={webURL}><span class="sr-only">Visit website</span></a>
+    <a target="_blank" class="link" href={webURL}><span class="sr-only">Visit website</span></a>
 </div>
 
 <style>
